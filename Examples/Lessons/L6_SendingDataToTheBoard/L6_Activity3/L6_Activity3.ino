@@ -5,7 +5,7 @@
   This sketch is written to accompany Activity 3 in Lesson 06 of the CTC GO! core module
 */
 
-char selectedWord[] = {"adamadrina"};          // choosing the word to guess
+char selectedWord[] = {"HelloWorld"};          // choosing the word to guess
 char guessingWord[sizeof(selectedWord)];  // to store the guessing letters
 char incoming = 0;
 
