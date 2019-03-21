@@ -3,7 +3,7 @@
 "frameworks": "Arduino",
 "keywords": "CTC GO, core, module",
 "description": "Library for the CTC GO Core module and education materials",
-"url": "https://github.com/arduino/EducationShield",
+"url": "https://github.com/bcmi-labs/CTC-Go/tree/master/Core_Module",
 "downloadUrl": "https://github.com/bcmi-labs/CTC-Go/tree/master/Core_Module/releases",
 "authors":
 {
