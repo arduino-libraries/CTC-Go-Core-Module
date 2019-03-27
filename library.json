@@ -3,8 +3,13 @@
 "frameworks": "Arduino",
 "keywords": "CTC GO, core, module",
 "description": "Library for the CTC GO Core module and education materials",
+<<<<<<< HEAD:library.json
 "url": "https://github.com/bcmi-labs/CTC-Go-Core-Module",
 "downloadUrl": "https://github.com/bcmi-labs/CTC-Go-Core-Module/releases",
+=======
+"url": "https://github.com/bcmi-labs/CTC-Go/tree/master/Core_Module",
+"downloadUrl": "https://github.com/bcmi-labs/CTC-Go/tree/master/Core_Module/releases",
+>>>>>>> 0b34c0e7d368f6c297789855a68d567a4f9b8720:Core_Module/library.json
 "authors":
 {
         "name": "Jose Garcia, Lenard George",
