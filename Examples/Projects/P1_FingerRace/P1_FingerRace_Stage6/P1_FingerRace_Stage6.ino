@@ -137,18 +137,18 @@ void loop()
     }
     digitalWrite(greenLED_P1, HIGH);
     
-    if (previousButtonState_P1 == HIGH)
+    if (previousButtonState_P1 == LOW)
     {
       player_1 = player_1 + 1;
     }
-    previousButtonState_P1 = LOW;
+    previousButtonState_P1 = HIGH;
   }
 
   else
   {
    
     digitalWrite(greenLED_P1, LOW);
-    previousButtonState_P1 = HIGH;
+    previousButtonState_P1 = LOW;
   }
 
   if ( digitalRead(button_P2) == HIGH)
@@ -159,15 +159,15 @@ void loop()
     }
 
     digitalWrite(greenLED_P2, HIGH);
-    if (previousButtonState_P2 == HIGH)
+    if (previousButtonState_P2 == LOW)
     {
       player_2 = player_2 + 1;
     }
-    previousButtonState_P2 = LOW;
+    previousButtonState_P2 = HIGH;
   }
   else
   {
     digitalWrite(greenLED_P2, LOW);
-    previousButtonState_P2 = HIGH;
+    previousButtonState_P2 = LOW;
   }
 }

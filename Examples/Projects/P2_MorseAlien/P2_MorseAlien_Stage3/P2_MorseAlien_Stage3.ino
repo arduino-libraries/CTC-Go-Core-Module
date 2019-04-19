@@ -16,14 +16,12 @@ int prevBreakButtonState = LOW;
 int prevRecordButtonState = LOW;
 int prevPlayButtonState = LOW;
 
-//STEP 3; Initialise the array for storing the symbols and other variables that will be used to store and retrieve the morse coded message
 int mySymbols[50];
 int symbolIndex = 0;
 int symbolLength = 300;
 int currentSymbol = 0;
 int sequencePlayed = false;
 
-//STEP 3; Initialise the values & tone frequencies for DOT(.) and DASH (__)
 int DASH = 2;
 int DOT = 1;
 int freq_DASH = 1500 ;
@@ -48,14 +46,12 @@ void loop()
    if (distanceSensorValue < 200)
    {
      digitalWrite(blueLED,HIGH);
-     //STEP 3;
-     currentSymbol = DASH;
+     currentSymbol = _____;
    }
    else
    {
      digitalWrite(blueLED,LOW);
-     //STEP 3;
-     currentSymbol = DOT;
+     currentSymbol = _____;
    }
    
    if (digitalRead(recordButton) == HIGH) 
@@ -63,28 +59,25 @@ void loop()
      if (prevRecordButtonState == LOW) 
     {  
       Serial.print("ADDING SYMBOL");
-      //STEP 3; Print the symbol index to which the current symbol(DOT or DASH) is added 
-      Serial.print(symbolIndex);
+      Serial.print(_____);
       Serial.print(" ");
-      Serial.println(currentSymbol);
+      Serial.println(_____);
       digitalWrite(blueLED, LOW);
       delay(symbolLength);
 
-      //STEP 3; If the the currentSymbol is a DOT then play a specific tone 
-      if (currentSymbol == DOT) 
+      if (currentSymbol == _____) 
       {
-         digitalWrite(blueLED, HIGH);
-         tone(piezo, freq_DOT);
+         digitalWrite(_____, _____);
+         tone(_____, freq_DOT);
          delay(symbolLength);
-         digitalWrite(blueLED, LOW);
+         digitalWrite(_____, _____);
       }
-      //STEP 3; If the the currentSymbol is a DASH then play a different tone as compared to DASH 
       else if (currentSymbol == DASH) 
       {
-         digitalWrite(blueLED, HIGH);
-         tone(piezo, freq_DASH );
+         digitalWrite(_____, _____);
+         tone(piezo, _____ );
          delay(symbolLength * 3);
-         digitalWrite(blueLED, LOW);
+         digitalWrite(_____, _____);
        }
     }
     prevRecordButtonState = HIGH;  
@@ -92,14 +85,13 @@ void loop()
     /*
       Add the symbol to the array
     */
-    //STEP 3; Check if the sequence has played already, start recording from scratch
     if (sequencePlayed == true) 
     {
-      sequencePlayed = false;
-      symbolIndex = 0;
+      sequencePlayed = _____;
+      symbolIndex = _____;
     }
-    mySymbols[symbolIndex] = currentSymbol;
-    symbolIndex = symbolIndex + 1;    
+    mySymbols[ _____ ] = _____;
+    symbolIndex = _____;    
    }
    else
    {

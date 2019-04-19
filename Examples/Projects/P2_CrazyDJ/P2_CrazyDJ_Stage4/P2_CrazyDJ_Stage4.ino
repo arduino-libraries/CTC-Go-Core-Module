@@ -8,7 +8,6 @@
 int lightSensor = A0;
 int on_pot = A1;
 int off_pot = A2;
-//STEP 4; Variables for potentiometers
 int av_pot = A3;
 int ledPin = 10;
 int piezo = 9;
@@ -18,7 +17,6 @@ int LEDvalue = 0;
 int soundValue = 0;
 int onTime = 0;
 int offTime = 0;
-//STEP 4; Variable save the state pot_3 state
 int avPitch = 0;
 
 void setup()
@@ -37,11 +35,9 @@ void loop()
   onTime = analogRead(on_pot);
   offTime = analogRead(off_pot);
   
-  //STEP4; Saving the pot_3 state
   avPitch = _____;
   soundValue = map(_____, 0, 1023, 31, 4000);
 
-  //STEP4; Filling the delay time with onTime and offTime
   tone(piezo, soundValue);
   delay(onTime);
   noTone(piezo);

@@ -29,7 +29,7 @@ void loop() {
   {
     digitalWrite(greenLED_P1, LOW);
   }
-   //STEP2; to check if button_P2 & greenLED_P2 works 
+
   if ( digitalRead(_____) == _____)
   {
     digitalWrite(_____,_____);

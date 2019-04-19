@@ -24,6 +24,8 @@ void setup()
   {
     guessingWord[i] = '_';
   }
+  Serial.print("The Word you are looking for is: ");
+  Serial.println(guessingWord);
 }
 
 void loop()
@@ -54,7 +56,7 @@ void loop()
   }
 
   // printing the state of the guess word
-  else if (mistakes < chances)
+  if (mistakes < chances)
   {
     Serial.print("The Word you are looking for is:  ");
     for (int i = 0; i < sizeof(selectedWord); i++)

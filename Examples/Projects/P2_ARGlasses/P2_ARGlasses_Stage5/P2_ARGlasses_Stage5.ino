@@ -6,7 +6,7 @@
 */
 
 
-int piezo = 8;
+int piezo = 11;
 int yellowLED = 13;
 int redLED = 12;
 int distanceSensor = A0 ;
@@ -27,7 +27,6 @@ void setup()
 
 void loop()
 {
-
   distanceSensorValue = analogRead(distanceSensor);
   Serial.println(distanceSensorValue);
   actualDistanceMM = map(distanceSensorValue, 0, 1023, 0, 3000);
@@ -35,6 +34,7 @@ void loop()
   Serial.println(distanceSensorValue);
   Serial.print("Distance converted: ");
   Serial.println(actualDistanceMM);
+  
   actualDelay = map(actualDistanceMM,0,3000,0,1000);
  
   if (actualDistanceMM < _____)
@@ -49,9 +49,9 @@ void loop()
   {
     digitalWrite(yellowLED, _____);
     tone(piezo, freq_1);
-    delay(_____);
+    delay(actualDelay);
     digitalWrite(yellowLED, _____);
-    _____(piezo);
-    delay(_____);
+    noTone(piezo);
+    delay(actualDelay);
   }
 }

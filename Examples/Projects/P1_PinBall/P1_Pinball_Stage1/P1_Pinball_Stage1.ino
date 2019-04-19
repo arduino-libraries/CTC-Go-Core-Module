@@ -10,7 +10,8 @@ int blueLED_2 = 12;
 int redLED = 13;
 int greenLED = 9;
 
-void setup() {
+void setup() 
+{
   pinMode (blueLED_1, _____);
   pinMode (blueLED_2, _____);
   pinMode (redLED, _____);
@@ -24,9 +25,9 @@ void loop()
   digitalWrite(redLED,_____);
   digitalWrite(greenLED,_____);
   delay(1000);
-  digitalWrite(blueLED_1, HIGH);
-  digitalWrite(blueLED_2,HIGH);
-  digitalWrite(redLED,HIGH);
-  digitalWrite(greenLED,HIGH);
+  digitalWrite(blueLED_1, LOW);
+  digitalWrite(blueLED_2,LOW);
+  digitalWrite(redLED,LOW);
+  digitalWrite(greenLED,LOW);
   delay(1000);
 }

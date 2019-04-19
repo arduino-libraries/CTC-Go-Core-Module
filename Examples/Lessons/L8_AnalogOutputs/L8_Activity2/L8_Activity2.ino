@@ -7,51 +7,45 @@
 */
  
   //pin connections
-  int buttonC = 13;
+  int buttonA = 13;
   int buttonB = 12;
-  int buttonA = 11;
   int piezo = 8;
   
   // notes frequency
-  int C_note = 262;
+  int A_note = 262;
   int B_note = 493;
-  int A_note = 440;
   
   // to save the button states
-  int buttCvalue = 0;
-  int buttBvalue = 0;
   int buttAvalue = 0;
+  int buttBvalue = 0;
   
   void setup()
   {
-    pinMode(buttonC, INPUT);
-    pinMode(buttonB, INPUT);
     pinMode(buttonA, INPUT);
+    pinMode(buttonB, INPUT);
     pinMode(piezo, OUTPUT);
   }
   
   void loop()
   {
     //reading the buttons states
-    buttCvalue = digitalRead(buttonC);
-    buttBvalue = digitalRead(buttonB);
     buttAvalue = digitalRead(buttonA);
+    buttBvalue = digitalRead(buttonB);
 
     // play a note, based on the button pressed 
-    if (buttCvalue == HIGH)
+    if (buttAvalue == HIGH)
     {
-      tone (piezo, C_note); 
+      tone (piezo, A_note); 
     }
     else if (buttBvalue == HIGH)
     {
       tone (piezo, B_note); 
-    }
-    else if (buttAvalue == HIGH)
-    {
-      tone (piezo, A_note); 
     }
     else
     {
       noTone(piezo); 
     }
   }
+
+
+  

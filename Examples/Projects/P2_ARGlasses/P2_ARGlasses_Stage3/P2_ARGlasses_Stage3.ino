@@ -34,10 +34,10 @@ void loop()
 
   /*
     digitalWrite(yellowLED,HIGH);
-    digitalWrite(piezo,HIGH);
+    tone(piezo,freq_1);
     delay(100);
     digitalWrite(yellowLED,LOW);
-    digitalWrite(piezo,LOW);
+    noTone(piezo,freq_1);
     delay(100);
   */
 

@@ -147,7 +147,7 @@ void loop()
            else if (_____ == DASH)
            {
            digitalWrite(_____, _____);
-           tone(piezo, _____);
+           tone(_____, _____);
            delay(_____);
            digitalWrite(_____, _____);
            }

@@ -29,13 +29,13 @@ void setup()
 void loop() {
 
 
-  if ( digitalRead(button_1))
+  if ( digitalRead(button_1) == HIGH )
   {  
    winning  = 1;
    delay(2000);
   }
 
-  if ( digitalRead(button_2) )
+  if ( digitalRead(button_2) == HIGH )
   {
    losing = losing + 1;
    delay(2000); 
@@ -55,39 +55,39 @@ void loop() {
   delay(1000);
   }
   
-  else if (losing == 1) {
+  else if (losing == 1) 
+  {
     digitalWrite(_____, _____);
-
+    delay(1500);
   }
   else if (losing == 2)
   {
     digitalWrite(_____, _____);
+    delay(1500);
   }
   else if (losing == 3)
   {
     digitalWrite(redLED, HIGH);
     digitalWrite(greenLED, LOW);
     delay(_____);
-    digitalWrite(blueLED_1, LOW);
-    digitalWrite(blueLED_2, LOW);
-    digitalWrite(redLED, LOW);
+    digitalWrite(blueLED_1, _____);
+    digitalWrite(blueLED_2, _____);
+    digitalWrite(redLED, _____);
     delay(_____);
-    digitalWrite(blueLED_1, HIGH);
-    digitalWrite(blueLED_2, HIGH);
-    digitalWrite(redLED, HIGH);
+    digitalWrite(blueLED_1, _____);
+    digitalWrite(blueLED_2, _____);
+    digitalWrite(redLED, _____);
     delay(_____);
-    digitalWrite(blueLED_1, LOW);
-    digitalWrite(blueLED_2, LOW);
-    digitalWrite(redLED, LOW);
+    digitalWrite(blueLED_1, _____);
+    digitalWrite(blueLED_2,_____);
+    digitalWrite(redLED, _____);
     delay(_____);
-    digitalWrite(blueLED_1, HIGH);
-    digitalWrite(blueLED_2, HIGH);
-    digitalWrite(redLED, HIGH);
+    digitalWrite(blueLED_1, _____);
+    digitalWrite(blueLED_2, _____);
+    digitalWrite(redLED, _____);
     delay(_____);
 
     losing = _____;
     winning  = _____;
   }
-
-  delay(500);
 }

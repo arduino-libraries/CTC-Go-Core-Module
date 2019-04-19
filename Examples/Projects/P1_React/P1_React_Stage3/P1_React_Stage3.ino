@@ -59,7 +59,7 @@ void loop() {
 
   if (game == _____)
   {
-     if (digitalRead(button_P1) == _____) 
+     if (digitalRead(button_P1) == HIGH) 
      {
          digitalWrite(blueLED_P1, HIGH);
          delay(100);
@@ -68,7 +68,7 @@ void loop() {
          game = _____;
      }
     
-    if (digitalRead(button_P2) == _____)
+    if (digitalRead(button_P2) == HIGH)
     {
        digitalWrite(blueLED_P2, HIGH);
        delay(100);

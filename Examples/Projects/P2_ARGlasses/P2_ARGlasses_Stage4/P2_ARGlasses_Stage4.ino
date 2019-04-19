@@ -5,7 +5,7 @@
   This sketch is written to accompany Stage 4 in AR GLASSES  of the CTC GO! core module
 */
 
-int piezo = 8;
+int piezo = 11;
 int yellowLED = 13;
 int distanceSensor = A0 ;
 
@@ -36,10 +36,10 @@ void loop()
 
   actualDelay = map(actualDistance,_____,_____,_____,_____);
 
-  digitalWrite(yellowLED,_____);
-  _____(piezo,freq_1);
+  digitalWrite(yellowLED,HIGH);
+  tone(piezo,freq_1);
   delay(_____);
-  digitalWrite(yellowLED,_____);
-  _____(piezo);
+  digitalWrite(yellowLED,LOW);
+  noTone(piezo);
   delay(_____);
 }

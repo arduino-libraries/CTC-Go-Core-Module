@@ -28,7 +28,6 @@ int BREAK = 0;
 
 int freq_DASH = 1500 ;
 int freq_DOT = 1000 ;
-//STEP 4; Initialise the values & tone frequencies for BREAK
 int freq_BREAK = 500 ; 
 
 void setup()

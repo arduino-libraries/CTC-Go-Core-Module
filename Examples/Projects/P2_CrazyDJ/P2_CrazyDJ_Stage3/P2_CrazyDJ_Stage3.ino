@@ -6,7 +6,6 @@
 */
 
 int lightSensor = A0;
-//STEP 3; Variables for potentiometers
 int on_pot = A1;
 int off_pot = A2;
 int ledPin = 10;
@@ -15,7 +14,6 @@ int piezo = 9;
 int lightValue = 0;
 int LEDvalue = 0;
 int soundValue = 0;
-//STEP3; Variables to save the delay times
 int onTime = 0;
 int offTime = 0;
 

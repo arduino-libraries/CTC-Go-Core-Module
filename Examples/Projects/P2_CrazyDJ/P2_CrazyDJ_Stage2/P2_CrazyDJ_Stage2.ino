@@ -8,12 +8,10 @@
 
 int lightSensor = A0;
 int ledPin = 10;
-//STEP 2; Variable for a piezo
 int piezo = 9;
 
 int lightValue = 0;
 int LEDvalue = 0;
-//STEP2; Variable for sound frequence
 int soundValue = 0;
 
 void setup()

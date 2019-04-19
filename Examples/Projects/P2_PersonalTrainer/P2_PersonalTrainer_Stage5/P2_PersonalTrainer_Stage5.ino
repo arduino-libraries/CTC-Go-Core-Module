@@ -31,7 +31,7 @@ void setup(){
     pinMode(ledCounter_2, OUTPUT);
     pinMode(ledCounter_3, OUTPUT);
     pinMode(incrementButton, INPUT);    
-    pinMode(piezo, INPUT);  
+    pinMode(piezo, OUTPUT);  
 
     Serial.begin(9600);
   

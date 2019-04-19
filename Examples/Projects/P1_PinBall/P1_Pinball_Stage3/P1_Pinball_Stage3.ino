@@ -27,14 +27,14 @@ void setup()
 
 void loop() {
 
-if ( digitalRead(button_1))
+if ( digitalRead(button_1) == HIGH ) 
   {
    digitalWrite(greenLED, HIGH);
    winning = _____;
    delay(_____);
   }
 
-  if ( digitalRead(button_2) )
+  if ( digitalRead(button_2) == HIGH ) 
   {
    digitalWrite(blueLED_1, HIGH);
    losing = _____;

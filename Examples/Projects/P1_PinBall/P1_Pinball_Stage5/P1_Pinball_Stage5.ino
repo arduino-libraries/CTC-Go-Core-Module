@@ -29,13 +29,13 @@ void setup()
 
 void loop() {
 
-  if ( digitalRead(button_1))
+  if ( digitalRead(button_1) ==  HIGH )
   {
    winning = 1;
    delay(2000);
   }
 
-  if ( digitalRead(button_2) )
+  if ( digitalRead(button_2) == HIGH )
   {
    losing = losing + 1;
    delay(2000);
@@ -57,10 +57,12 @@ void loop() {
   else if (losing == 1) 
   {
     digitalWrite(blueLED_1, HIGH);
+    delay(1500);   
   }
   else if (losing == 2)
   {
     digitalWrite(blueLED_2, HIGH);
+    delay(1500);
   }
   else if (losing == 3)
   {
