@@ -33,25 +33,18 @@ void setup()
 
 void loop()
 {
-  //game state programming
   if (gameState == 0)
   {
-    //Arcade light movement
     digitalWrite(greenLED_P1, HIGH);
+    digitalWrite(blueLED_P1, HIGH);
+    digitalWrite(blueLED_P2, HIGH);
+    digitalWrite(greenLED_P2, HIGH);
+    delay(200);
+    digitalWrite(greenLED_P1, LOW);
     digitalWrite(blueLED_P1, LOW);
     digitalWrite(blueLED_P2, LOW);
     digitalWrite(greenLED_P2, LOW);
-    delay(100);
-    digitalWrite(greenLED_P1, LOW);
-    digitalWrite(blueLED_P1, HIGH);
-    delay(100);
-    digitalWrite(blueLED_P1, LOW);
-    digitalWrite(blueLED_P2, HIGH);
-    delay(100);
-    digitalWrite(blueLED_P2, LOW);
-    digitalWrite(greenLED_P2, HIGH);
-    delay(100);
-    digitalWrite(greenLED_P2,LOW);
+    delay(200);
   }
   else if (gameState == 1) {
     digitalWrite(greenLED_P1, _____);
@@ -97,8 +90,8 @@ void loop()
    
     else
     {
-      digitalWrite(blueLED_P1, LOW);
-      digitalWrite(blueLED_P2, LOW);
+      digitalWrite(blueLED_P1, HIGH);
+      digitalWrite(blueLED_P2, HIGH);
     }
 
     if (player_1 > 30)

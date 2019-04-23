@@ -67,8 +67,8 @@ void loop()
     }
     else
     {
-      digitalWrite(blueLED_P1, LOW);
-      digitalWrite(blueLED_P2, LOW);
+      digitalWrite(blueLED_P1, HIGH);
+      digitalWrite(blueLED_P2, HIGH);
     }
 
     if (player_1 > 30)
