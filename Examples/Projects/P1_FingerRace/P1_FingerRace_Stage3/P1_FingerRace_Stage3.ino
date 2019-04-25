@@ -62,7 +62,7 @@ void loop()
     digitalWrite(greenLED_P1, LOW);
   }
 
-  if ( digitalRead(button_P1) == HIGH)
+  if ( digitalRead(button_P2) == HIGH)
   {
     gameState = _____;
     digitalWrite(greenLED_P2, HIGH);
