@@ -25,7 +25,6 @@ void loop()
 {
   
   distanceSensorValue = analogRead(distanceSensor);
-  Serial.println(distanceSensorValue);
 
   actualDistanceMM = map(distanceSensorValue,0,1023,0,3000);
 
@@ -34,7 +33,7 @@ void loop()
   Serial.print("Distance converted: ");
   Serial.println(actualDistanceMM);
 
-  actualDelay = map(actualDistance,_____,_____,_____,_____);
+  actualDelay = map(actualDistanceMM,_____,_____,_____,_____);
 
   digitalWrite(yellowLED,HIGH);
   tone(piezo,freq_1);
