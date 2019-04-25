@@ -28,7 +28,6 @@ void setup()
 void loop()
 {
   distanceSensorValue = analogRead(distanceSensor);
-  Serial.println(distanceSensorValue);
   actualDistanceMM = map(distanceSensorValue, 0, 1023, 0, 3000);
   Serial.print("Distance read: ");
   Serial.println(distanceSensorValue);
