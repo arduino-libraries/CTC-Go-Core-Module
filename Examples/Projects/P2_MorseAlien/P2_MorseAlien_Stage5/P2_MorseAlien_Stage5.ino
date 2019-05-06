@@ -61,13 +61,14 @@ void loop()
    { 
      if (prevRecordButtonState == LOW) 
     {  
-      Serial.print("ADDING SYMBOL");
+      Serial.print("ADDING SYMBOL ");
       Serial.print(symbolIndex);
       Serial.print(" ");
       Serial.println(currentSymbol);
 
       digitalWrite(blueLED, LOW);
       delay(symbolLength);
+      
       if (currentSymbol == DOT) 
       {
          digitalWrite(blueLED, HIGH);
