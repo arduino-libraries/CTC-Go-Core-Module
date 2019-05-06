@@ -25,9 +25,9 @@ void loop()
   // send data only when you receive data:
   if (Serial.available() > 0)
   {
-    incomingWord [i] = Serial.read();
+    incomingWord[i] = Serial.read();
 
-    if (incomingWord [i] == 'a')
+    if (incomingWord[i] == 'a')
     {
       digitalWrite(greenLED, HIGH);
       delay(500);
@@ -35,7 +35,7 @@ void loop()
       delay(500);
       counter += 1;
     }
-    else if (incomingWord [i] == 'e')
+    else if (incomingWord[i] == 'e')
     {
       digitalWrite(greenLED, HIGH);
       delay(500);
@@ -43,7 +43,7 @@ void loop()
       delay(500);
       counter += 1;
     }
-    else if (incomingWord [i] == 'i')
+    else if (incomingWord[i] == 'i')
     {
       digitalWrite(greenLED, HIGH);
       delay(500);
@@ -51,7 +51,7 @@ void loop()
       delay(500);
       counter += 1;
     }
-    else if (incomingWord [i] == 'o')
+    else if (incomingWord[i] == 'o')
     {
       digitalWrite(greenLED, HIGH);
       delay(500);
@@ -59,7 +59,7 @@ void loop()
       delay(500);
       counter += 1;
     }
-    else if (incomingWord [i] == 'u')
+    else if (incomingWord[i] == 'u')
     {
       digitalWrite(greenLED, HIGH);
       delay(500);

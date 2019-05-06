@@ -1,5 +1,5 @@
 {
-"name": "CTC GO CORE",
+"name": "CTC GO CORE MODULE",
 "frameworks": "Arduino",
 "keywords": "CTC GO, core, module",
 "description": "Library for the CTC GO Core module and education materials",
