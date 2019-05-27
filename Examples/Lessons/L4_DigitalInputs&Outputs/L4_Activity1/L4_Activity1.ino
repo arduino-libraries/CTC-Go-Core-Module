@@ -6,7 +6,7 @@
 */
 
 // initialising the pins and other variables.
-int button = 2;
+int button_pin = 2;
 int button_state = 0; 
 
 void setup() 
