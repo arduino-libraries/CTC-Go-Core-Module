@@ -7,9 +7,9 @@
 
   
   int USsensor = A0; 
-   int yellowLED = 9;
-  int redLED = 11;   
-  int greenLED = 13;
+  int yellowLED = 11;
+  int redLED = 13;   
+  int greenLED = 9;
   
   float distance = 0; 
   int value = 0;
