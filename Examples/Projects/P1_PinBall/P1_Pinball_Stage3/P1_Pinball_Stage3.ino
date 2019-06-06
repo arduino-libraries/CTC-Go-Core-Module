@@ -51,10 +51,10 @@ if ( digitalRead(button_1) == HIGH )
   digitalWrite(redLED,HIGH);
   digitalWrite(greenLED,HIGH);
   delay(1000);
-  digitalWrite(blueLED_1, HIGH);
-  digitalWrite(blueLED_2,HIGH);
-  digitalWrite(redLED,HIGH);
-  digitalWrite(greenLED,HIGH);
+  digitalWrite(blueLED_1, LOW);
+  digitalWrite(blueLED_2,LOW);
+  digitalWrite(redLED,LOW);
+  digitalWrite(greenLED,LOW);
   delay(1000);
   }
 
