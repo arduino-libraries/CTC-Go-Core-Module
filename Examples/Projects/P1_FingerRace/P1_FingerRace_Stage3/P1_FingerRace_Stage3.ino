@@ -12,7 +12,7 @@ int button_P1 = 6;
 int button_P2 = 7;
 
 int blueLED_P1 =  12;
-int blueLED_P2 =  10;
+int blueLED_P2 =  11;
 
 int gameState = 0;
 
