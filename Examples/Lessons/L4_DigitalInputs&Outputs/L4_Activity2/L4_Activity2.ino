@@ -5,7 +5,7 @@
   This sketch is written to accompany Activity 2 in Lesson 04 of the CTC GO! core module
 */
 
-int button = 2;
+int button_pin = 2;
 int button_state = 0; 
 
 void setup() 
