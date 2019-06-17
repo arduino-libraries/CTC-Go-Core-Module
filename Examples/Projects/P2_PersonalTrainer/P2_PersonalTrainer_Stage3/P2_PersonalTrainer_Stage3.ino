@@ -27,8 +27,7 @@ void setup(){
     pinMode(ledCounter_3, OUTPUT);
     pinMode(incrementButton, INPUT);
     Serial.begin(9600);
-
-  
+    
 }
 
 void loop(){

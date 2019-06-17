@@ -5,7 +5,6 @@
   This sketch is written to accompany Stage 2 in PERSONAL TRAINER  of the CTC GO! core module
 */
 
-
 int ledCounter_1 = 2;
 int ledCounter_2 = 3;
 int ledCounter_3 = 4;
@@ -23,7 +22,8 @@ void setup(){
     Serial.begin(_____);
 }
 
-void loop(){
+void loop()
+{
 
     digitalWrite(ledCounter_1,HIGH);
     digitalWrite(ledCounter_2, LOW);

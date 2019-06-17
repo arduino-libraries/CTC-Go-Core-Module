@@ -5,7 +5,6 @@
   This sketch is written to accompany Stage 5 in AR GLASSES  of the CTC GO! core module
 */
 
-
 int piezo = 11;
 int yellowLED = 13;
 int redLED = 12;

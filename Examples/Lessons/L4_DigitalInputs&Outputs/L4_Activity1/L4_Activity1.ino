@@ -5,8 +5,8 @@
   This sketch is written to accompany Activity 1 in Lesson 04 of the CTC GO! core module
 */
 
-// initialising the pins and other variables.
-int button = 2;
+// Initialising the pins and other variables.
+int button_pin = 2;
 int button_state = 0; 
 
 void setup() 
