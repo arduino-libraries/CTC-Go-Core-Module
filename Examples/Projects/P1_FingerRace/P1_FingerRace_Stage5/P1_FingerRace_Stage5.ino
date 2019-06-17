@@ -8,7 +8,7 @@
 int greenLED_P1 = 13;
 int blueLED_P1 =  12;
 
-int blueLED_P2 =  10;
+int blueLED_P2 =  11;
 int greenLED_P2 =  9;
 
 int button_P1 = 6;
