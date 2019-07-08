@@ -5,7 +5,7 @@
   This sketch is written to accompany Activity 3 in Lesson 04 of the CTC GO! core module
 */
 
-// initialising the pins and other variables.
+// Initialising the pins and other variables.
 int greenLED = 11;
 int yellowLED = 12;
 int redLED = 13;
