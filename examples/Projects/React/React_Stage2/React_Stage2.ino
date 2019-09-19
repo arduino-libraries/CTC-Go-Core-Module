@@ -32,12 +32,12 @@ void loop()
     digitalWrite(blueLED_P2, HIGH);
     digitalWrite(greenLED, HIGH);
     digitalWrite(redLED, HIGH);
-    delay(1000);
+    delay(100);
     digitalWrite(blueLED_P1, LOW);
     digitalWrite(blueLED_P2, LOW);
     digitalWrite(greenLED, LOW);
     digitalWrite(redLED, LOW);
-    delay(1000);
+    delay(100);
   */
 
   if (digitalRead(button_P1) == _____)

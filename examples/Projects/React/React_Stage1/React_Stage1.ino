@@ -25,10 +25,10 @@ void loop()
   digitalWrite(blueLED_P2, _____);
   digitalWrite(greenLED, _____);
   digitalWrite(redLED, _____);
-  delay(1000);
+  delay(100);
   digitalWrite(blueLED_P1, LOW);
   digitalWrite(blueLED_P2, LOW);
   digitalWrite(greenLED, LOW);
   digitalWrite(redLED, LOW);
-  delay(1000);
+  delay(100);
 }
